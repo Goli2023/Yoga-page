@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoga 🖐</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #1F3D74;
+            border: 2px solid #000000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 24px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 20px 30px;
+            font-size: 28px;
+            background: #1F3D74;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px grey;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            background: #D6E0FF;
+            color: #1F3D74;
+            cursor: pointer;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180.3deg, rgb(214, 224, 255) 37.2%, rgb(254, 168, 168) 137.3%);
+            border-radius: 8px;
+        }
+
+        .learn-more {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-decoration: none;
+            color: #1F3D74;
+            font-size: 20px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+            color: #FF9839;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            I love Yoga
+        </h1>
+        <h2>
+            Especially Iyengar yoga
+        </h2>
+        <hr />
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/875/original/yoga_photo.png?1669880368"
+            alt="Yoga" />
+        <hr />
+        <p>
+            <strong> Yoga </strong> is a group of physical, mental, and spiritual practices or disciplines which
+            originated in ancient
+            India and aim to control (yoke) and still the mind, recognizing a detached witness-consciousness untouched
+            by the
+            mind (Chitta) and mundane suffering. There is a wide variety of schools of yoga, practices, and goals in
+            Hinduism,
+            Buddhism, and Jainism, and traditional and modern yoga is practiced worldwide.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Yoga" target="_blank" class="learn-more">
+            Learn more about yoga
+        </a>
+        <button>
+            Join yoga class 🏃‍♂️
+        </button>
+        <p class="contact-info">
+            Coded by
+            <a href="https://www.linkedin.com/in/goli-ahmadifard/" target="blank">
+                Goli Ahmadifard
+            </a>
+        </p>
+    </div>
+</body>
+<script>
+    function join() {
+        let name = prompt("What is your name?")
+        let email = prompt("What is your email address?")
+        alert(
+            "Thank you " + name + " for your interest. We'll be in touch via email. Stay healthy 💙"
+        )
+    }
+    let button = document.querySelector("button")
+    button.addEventListener("click", join)
+</script>
+
+</html>
